@@ -1,0 +1,509 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\models\\venue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:models\\venue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\controllers\\venuecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:controllers\\venuecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\migrations\\20250403195121_initialsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:migrations\\20250403195121_initialsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\views\\booking\\customer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:views\\booking\\customer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\views\\booking\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:views\\booking\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\views\\booking\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:views\\booking\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\views\\booking\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:views\\booking\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\models\\eventtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:models\\eventtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\views\\booking\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:views\\booking\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\views\\booking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:views\\booking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\views\\venue\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:views\\venue\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\views\\booking\\event.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:views\\booking\\event.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\views\\booking\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:views\\booking\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\views\\event\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:views\\event\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\views\\venue\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:views\\venue\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\st10443998_cldv6211_poe.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:st10443998_cldv6211_poe.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\views\\venue\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:views\\venue\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\views\\venue\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:views\\venue\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|c:\\users\\cadeb\\source\\repos\\st10443998_cldv6211_part_1\\views\\venue\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF636043-F6B7-4AF0-A206-3B43920BE3D5}|ST10443998_CLDV6211_POE.csproj|solutionrelative:views\\venue\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Confirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Booking\\Confirmation.cshtml",
+              "RelativeDocumentMoniker": "Views\\Booking\\Confirmation.cshtml",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Booking\\Confirmation.cshtml",
+              "RelativeToolTip": "Views\\Booking\\Confirmation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T11:45:07.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Models\\Event.cs",
+              "RelativeDocumentMoniker": "Models\\Event.cs",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Models\\Event.cs",
+              "RelativeToolTip": "Models\\Event.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T18:38:59.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Customer.cshtml",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Booking\\Customer.cshtml",
+              "RelativeDocumentMoniker": "Views\\Booking\\Customer.cshtml",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Booking\\Customer.cshtml",
+              "RelativeToolTip": "Views\\Booking\\Customer.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T11:35:30.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VenueController.cs",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Controllers\\VenueController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VenueController.cs",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Controllers\\VenueController.cs",
+              "RelativeToolTip": "Controllers\\VenueController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T18:08:16.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EventController.cs",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Controllers\\EventController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EventController.cs",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Controllers\\EventController.cs",
+              "RelativeToolTip": "Controllers\\EventController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAIwBIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T20:55:49.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "Controllers\\BookingController.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAkwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T11:20:04.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "Models\\Booking.cs",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Models\\Booking.cs",
+              "RelativeToolTip": "Models\\Booking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T18:38:20.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Venue.cs",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Models\\Venue.cs",
+              "RelativeDocumentMoniker": "Models\\Venue.cs",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Models\\Venue.cs",
+              "RelativeToolTip": "Models\\Venue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T18:07:08.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Booking\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Booking\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Booking\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Booking\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T12:51:36.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Booking\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Booking\\Details.cshtml",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Booking\\Details.cshtml",
+              "RelativeToolTip": "Views\\Booking\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T12:49:58.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20250403195121_InitialSetup.cs",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Migrations\\20250403195121_InitialSetup.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250403195121_InitialSetup.cs",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Migrations\\20250403195121_InitialSetup.cs",
+              "RelativeToolTip": "Migrations\\20250403195121_InitialSetup.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAgwHcAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T19:51:21.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-03T20:25:37.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Models\\Customer.cs",
+              "RelativeToolTip": "Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T18:40:24.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Booking\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Booking\\Index.cshtml",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Booking\\Index.cshtml",
+              "RelativeToolTip": "Views\\Booking\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T11:00:02.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Booking\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Booking\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Booking\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Booking\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T12:51:02.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T19:02:00.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EventType.cs",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Models\\EventType.cs",
+              "RelativeDocumentMoniker": "Models\\EventType.cs",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Models\\EventType.cs",
+              "RelativeToolTip": "Models\\EventType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T18:39:51.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Models\\Payment.cs",
+              "RelativeToolTip": "Models\\Payment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T18:41:10.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Venue\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Venue\\Index.cshtml",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Venue\\Index.cshtml",
+              "RelativeToolTip": "Views\\Venue\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T18:16:02.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Event\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Event\\Index.cshtml",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Event\\Index.cshtml",
+              "RelativeToolTip": "Views\\Event\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T21:23:08.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T20:03:12.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Payment.cshtml",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Booking\\Payment.cshtml",
+              "RelativeDocumentMoniker": "Views\\Booking\\Payment.cshtml",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Booking\\Payment.cshtml",
+              "RelativeToolTip": "Views\\Booking\\Payment.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T11:43:27.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Event.cshtml",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Booking\\Event.cshtml",
+              "RelativeDocumentMoniker": "Views\\Booking\\Event.cshtml",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Booking\\Event.cshtml",
+              "RelativeToolTip": "Views\\Booking\\Event.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T11:37:24.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ST10443998_CLDV6211_POE.csproj",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\ST10443998_CLDV6211_POE.csproj",
+              "RelativeDocumentMoniker": "ST10443998_CLDV6211_POE.csproj",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\ST10443998_CLDV6211_POE.csproj",
+              "RelativeToolTip": "ST10443998_CLDV6211_POE.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-01T18:59:41.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Venue\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Venue\\Details.cshtml",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Venue\\Details.cshtml",
+              "RelativeToolTip": "Views\\Venue\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T18:53:44.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Venue\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Venue\\Create.cshtml",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Venue\\Create.cshtml",
+              "RelativeToolTip": "Views\\Venue\\Create.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T18:44:50.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T19:16:41.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Venue\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Venue\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Venue\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Venue\\Edit.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T18:46:29.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Venue\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Venue\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\cadeb\\source\\repos\\ST10443998_CLDV6211_Part_1\\Views\\Venue\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Venue\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T18:52:53.023Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

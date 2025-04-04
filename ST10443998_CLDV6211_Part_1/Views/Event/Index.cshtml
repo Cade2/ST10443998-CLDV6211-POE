@@ -1,0 +1,39 @@
+﻿@model List<ST10443998_CLDV6211_POE.Models.Event>
+
+@{
+    ViewData["Title"] = "Event List";
+}
+
+<h2>Events</h2>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Add New Event</a>
+</p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Event Name</th>
+            <th>Date</th>
+            <th>Venue</th>
+            <th>Event Type</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.EventName</td>
+                <td>@item.EventDate.ToShortDateString()</td>
+                <td>@item.Venue?.VenueName</td>
+                <td>@item.EventType?.TypeName</td>
+                <td>
+                    <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@item.EventId">View</a>
+                    <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@item.EventId">Edit</a>
+                    <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.EventId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
