@@ -1,12 +1,16 @@
 ﻿namespace ST10443998_CLDV6211_POE.Models
 {
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+
     public class Payment
     {
         public int PaymentId { get; set; }
-        public DateTime PaymentDate { get; set; }
+
+        [Display(Name = "Amount")]
         public decimal Amount { get; set; }
 
-        public int BookingId { get; set; }
-        public Booking Booking { get; set; }
+        [Display(Name = "Payment Date")]
+        public DateTime PaymentDate { get; set; }
     }
 }

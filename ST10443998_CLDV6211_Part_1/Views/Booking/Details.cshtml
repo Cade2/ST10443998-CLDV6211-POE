@@ -13,7 +13,7 @@
 <p><strong>Date:</strong> @Model.Event?.EventDate.ToShortDateString()</p>
 <p><strong>Description:</strong> @Model.Event?.Description</p>
 <p><strong>Type:</strong> @Model.Event?.EventType?.TypeName</p>
-<p><strong>Venue:</strong> @Model.Venue?.VenueName</p>
+<p><strong>Venue:</strong> @Model.Event?.Venue?.VenueName</p>
 
 <h4>💳 Payment</h4>
 <p><strong>Amount:</strong> @($"R{Model.Payment?.Amount}")</p>

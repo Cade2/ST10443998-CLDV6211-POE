@@ -2,15 +2,13 @@
 
 @{
     ViewData["Title"] = "Payment";
-    var customerId = ViewBag.CustomerId;
-    var eventId = ViewBag.EventId;
+    var bookingId = ViewBag.BookingId;
 }
 
 <h2>Step 3: Enter Payment Details</h2>
 
-<form asp-action="Payment" method="post">
-    <input type="hidden" name="customerId" value="@customerId" />
-    <input type="hidden" name="eventId" value="@eventId" />
+<form asp-action="Payment" asp-controller="Booking" method="post">
+    <input type="hidden" name="bookingId" value="@bookingId" />
 
     <div class="form-group">
         <label asp-for="Amount"></label>

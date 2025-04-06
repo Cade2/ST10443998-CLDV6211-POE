@@ -48,7 +48,7 @@
     <div class="form-group">
         <label>Venue</label>
         <select name="VenueId" class="form-control"
-                asp-items="@(new SelectList(ViewBag.Venues, "VenueId", "VenueName", Model.VenueId))">
+                asp-items="@(new SelectList(ViewBag.Venues, "VenueId", "VenueName", @Model.Event?.VenueId))">
             <option value="">-- Select Venue --</option>
         </select>
     </div>

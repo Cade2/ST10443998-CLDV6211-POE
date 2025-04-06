@@ -7,7 +7,7 @@
 <p><strong>Booking ID:</strong> @Model.BookingId</p>
 <p><strong>Customer:</strong> @Model.Customer?.FullName</p>
 <p><strong>Event:</strong> @Model.Event?.EventName</p>
-<p><strong>Venue:</strong> @Model.Venue?.VenueName</p>
+<p><strong>Venue:</strong> @Model.Event?.Venue?.VenueName</p>
 
 <form asp-action="Delete" method="post">
     <input type="hidden" asp-for="BookingId" />

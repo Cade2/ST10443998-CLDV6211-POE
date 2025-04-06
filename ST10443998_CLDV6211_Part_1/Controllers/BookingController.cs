@@ -1,7 +1,6 @@
 ﻿using ST10443998_CLDV6211_POE.Data;
 using ST10443998_CLDV6211_POE.Models;
 using Microsoft.AspNetCore.Mvc;
-using ST10443998_CLDV6211_POE.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace ST10443998_CLDV6211_POE.Controllers
@@ -20,7 +19,7 @@ namespace ST10443998_CLDV6211_POE.Controllers
             var bookings = _db.Bookings
                 .Include(b => b.Customer)
                 .Include(b => b.Event)
-                .Include(b => b.Venue)
+                    .ThenInclude(e => e.Venue)
                 .ToList();
 
             return View(bookings);
@@ -54,46 +53,43 @@ namespace ST10443998_CLDV6211_POE.Controllers
         [HttpPost]
         public IActionResult Event(Event ev, int customerId)
         {
-            _db.Events.Add(ev);
+            var booking = new Booking
+            {
+                CustomerId = customerId,
+                BookingDate = DateTime.Now,
+                Event = ev
+            };
+
+            _db.Bookings.Add(booking);
             _db.SaveChanges();
 
-            // Redirect to payment step, passing both customerId and eventId
-            return RedirectToAction("Payment", new { customerId = customerId, eventId = ev.EventId });
+            // Pass bookingId to Payment view
+            return RedirectToAction("Payment", new { bookingId = booking.BookingId });
         }
 
+
         [HttpGet]
-        public IActionResult Payment(int customerId, int eventId)
+        public IActionResult Payment(int bookingId)
         {
-            ViewBag.CustomerId = customerId;
-            ViewBag.EventId = eventId;
+            ViewBag.BookingId = bookingId;
             return View();
         }
 
         [HttpPost]
-        public IActionResult Payment(Payment payment, int customerId, int eventId)
+        public IActionResult Payment(Payment payment, int bookingId)
         {
-            // Get Event to retrieve VenueId
-            var ev = _db.Events.FirstOrDefault(e => e.EventId == eventId);
-            if (ev == null) return NotFound();
+            Console.WriteLine("✅ POST Payment reached");
 
-            var booking = new Booking
-            {
-                CustomerId = customerId,
-                EventId = eventId,
-                VenueId = ev.VenueId,
-                BookingDate = DateTime.Now
-            };
+            var booking = _db.Bookings.FirstOrDefault(b => b.BookingId == bookingId);
+            if (booking == null) return NotFound();
 
-            _db.Bookings.Add(booking);
-            _db.SaveChanges(); 
-
-            payment.BookingId = booking.BookingId;
-
+            booking.Payment = payment;
             _db.Payments.Add(payment);
-            _db.SaveChanges(); 
+            _db.SaveChanges();
 
             return RedirectToAction("Confirmation");
         }
+
 
         [HttpGet]
         public IActionResult Details(int id)
@@ -101,8 +97,8 @@ namespace ST10443998_CLDV6211_POE.Controllers
             var booking = _db.Bookings
                 .Include(b => b.Customer)
                 .Include(b => b.Event)
-                    .ThenInclude(e => e.EventType) 
-                .Include(b => b.Venue)
+                    .ThenInclude(e => e.EventType)
+                .Include(b => b.Event).ThenInclude(e => e.Venue)
                 .Include(b => b.Payment)
                 .FirstOrDefault(b => b.BookingId == id);
 
@@ -115,14 +111,12 @@ namespace ST10443998_CLDV6211_POE.Controllers
         public IActionResult Edit(int id)
         {
             var booking = _db.Bookings
-                .Include(b => b.Customer)
                 .Include(b => b.Event)
-                    .ThenInclude(e => e.EventType)
-                .Include(b => b.Venue)
-                .Include(b => b.Payment) 
+                .Include(b => b.Payment)
                 .FirstOrDefault(b => b.BookingId == id);
 
-            if (booking == null) return NotFound();
+            if (booking == null)
+                return NotFound();
 
             ViewBag.Venues = _db.Venues.ToList();
             ViewBag.EventTypes = _db.EventTypes.ToList();
@@ -135,29 +129,24 @@ namespace ST10443998_CLDV6211_POE.Controllers
         public IActionResult Edit(Booking booking)
         {
             var existingBooking = _db.Bookings
-                .Include(b => b.Customer)
                 .Include(b => b.Event)
                 .Include(b => b.Payment)
                 .FirstOrDefault(b => b.BookingId == booking.BookingId);
 
-            if (existingBooking == null) return NotFound();
+            if (existingBooking == null)
+                return NotFound();
 
-            // Update Booking info
+            // Update Booking date
             existingBooking.BookingDate = booking.BookingDate;
-            existingBooking.VenueId = booking.VenueId;
 
-            // Update Customer info
-            existingBooking.Customer.FullName = Request.Form["Customer.FullName"];
-            existingBooking.Customer.Email = Request.Form["Customer.Email"];
-            existingBooking.Customer.PhoneNumber = Request.Form["Customer.PhoneNumber"];
-
-            // Update Event info
+            // Update Event details
             existingBooking.Event.EventName = Request.Form["Event.EventName"];
             existingBooking.Event.EventDate = DateTime.Parse(Request.Form["Event.EventDate"]);
             existingBooking.Event.Description = Request.Form["Event.Description"];
             existingBooking.Event.EventTypeId = int.Parse(Request.Form["Event.EventTypeId"]);
+            existingBooking.Event.VenueId = int.Parse(Request.Form["Event.VenueId"]);
 
-            // Update Payment info
+            // Update Payment details
             existingBooking.Payment.Amount = decimal.Parse(Request.Form["Payment.Amount"]);
             existingBooking.Payment.PaymentDate = DateTime.Parse(Request.Form["Payment.PaymentDate"]);
 
@@ -166,54 +155,57 @@ namespace ST10443998_CLDV6211_POE.Controllers
             return RedirectToAction("Index");
         }
 
+
         [HttpGet]
         public IActionResult Delete(int id)
         {
             var booking = _db.Bookings
-                .Include(b => b.Customer)
                 .Include(b => b.Event)
-                .Include(b => b.Venue)
+                    .ThenInclude(e => e.Venue)
+                .Include(b => b.Event.EventType)
+                .Include(b => b.Payment)
+                .Include(b => b.Customer)
                 .FirstOrDefault(b => b.BookingId == id);
 
-            if (booking == null) return NotFound();
+            if (booking == null)
+                return NotFound();
+
             return View(booking);
         }
 
         [HttpPost, ActionName("Delete")]
         public IActionResult DeleteConfirmed(int id)
         {
-            var booking = _db.Bookings.FirstOrDefault(b => b.BookingId == id);
-            if (booking == null) return NotFound();
+            var booking = _db.Bookings
+                .Include(b => b.Customer)
+                .Include(b => b.Event)
+                .Include(b => b.Payment)
+                .FirstOrDefault(b => b.BookingId == id);
 
-            // Get IDs for related entities
-            int customerId = booking.CustomerId;
-            int eventId = booking.EventId;
+            if (booking == null)
+                return NotFound();
 
-            // Find and delete the Payment based on BookingId
-            var payment = _db.Payments.FirstOrDefault(p => p.BookingId == booking.BookingId);
-            if (payment != null)
-                _db.Payments.Remove(payment);
+            // Delete the associated event
+            if (booking.Event != null)
+                _db.Events.Remove(booking.Event);
 
-            // Delete the Event
-            var ev = _db.Events.FirstOrDefault(e => e.EventId == eventId);
-            if (ev != null)
-                _db.Events.Remove(ev);
+            // Delete the associated payment
+            if (booking.Payment != null)
+                _db.Payments.Remove(booking.Payment);
 
-            // Delete the Customer
-            var customer = _db.Customers.FirstOrDefault(c => c.CustomerId == customerId);
-            if (customer != null)
-                _db.Customers.Remove(customer);
+            // Delete the associated customer
+            if (booking.Customer != null)
+                _db.Customers.Remove(booking.Customer);
 
-            // Delete the Booking
+            // Delete the booking itself
             _db.Bookings.Remove(booking);
-
             _db.SaveChanges();
 
             return RedirectToAction("Index");
         }
 
 
-
+        [HttpGet]
         public IActionResult Confirmation()
         {
             return View();

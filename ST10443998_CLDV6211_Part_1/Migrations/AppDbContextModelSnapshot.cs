@@ -39,7 +39,7 @@ namespace ST10443998_CLDV6211_POE.Migrations
                     b.Property<int>("EventId")
                         .HasColumnType("int");
 
-                    b.Property<int>("VenueId")
+                    b.Property<int>("PaymentId")
                         .HasColumnType("int");
 
                     b.HasKey("BookingId");
@@ -48,7 +48,7 @@ namespace ST10443998_CLDV6211_POE.Migrations
 
                     b.HasIndex("EventId");
 
-                    b.HasIndex("VenueId");
+                    b.HasIndex("PaymentId");
 
                     b.ToTable("Bookings");
                 });
@@ -167,16 +167,10 @@ namespace ST10443998_CLDV6211_POE.Migrations
                     b.Property<decimal>("Amount")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("BookingId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("PaymentDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("PaymentId");
-
-                    b.HasIndex("BookingId")
-                        .IsUnique();
 
                     b.ToTable("Payments");
                 });
@@ -189,16 +183,19 @@ namespace ST10443998_CLDV6211_POE.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("VenueId"));
 
-                    b.Property<int?>("Capacity")
+                    b.Property<int>("Capacity")
                         .HasColumnType("int");
 
                     b.Property<string>("ImageUrl")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Location")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("VenueName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("VenueId");
@@ -215,14 +212,14 @@ namespace ST10443998_CLDV6211_POE.Migrations
                         .IsRequired();
 
                     b.HasOne("ST10443998_CLDV6211_POE.Models.Event", "Event")
-                        .WithMany("Bookings")
+                        .WithMany()
                         .HasForeignKey("EventId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ST10443998_CLDV6211_POE.Models.Venue", "Venue")
+                    b.HasOne("ST10443998_CLDV6211_POE.Models.Payment", "Payment")
                         .WithMany()
-                        .HasForeignKey("VenueId")
+                        .HasForeignKey("PaymentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -230,7 +227,7 @@ namespace ST10443998_CLDV6211_POE.Migrations
 
                     b.Navigation("Event");
 
-                    b.Navigation("Venue");
+                    b.Navigation("Payment");
                 });
 
             modelBuilder.Entity("ST10443998_CLDV6211_POE.Models.Event", b =>
@@ -252,29 +249,7 @@ namespace ST10443998_CLDV6211_POE.Migrations
                     b.Navigation("Venue");
                 });
 
-            modelBuilder.Entity("ST10443998_CLDV6211_POE.Models.Payment", b =>
-                {
-                    b.HasOne("ST10443998_CLDV6211_POE.Models.Booking", "Booking")
-                        .WithOne("Payment")
-                        .HasForeignKey("ST10443998_CLDV6211_POE.Models.Payment", "BookingId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Booking");
-                });
-
-            modelBuilder.Entity("ST10443998_CLDV6211_POE.Models.Booking", b =>
-                {
-                    b.Navigation("Payment")
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("ST10443998_CLDV6211_POE.Models.Customer", b =>
-                {
-                    b.Navigation("Bookings");
-                });
-
-            modelBuilder.Entity("ST10443998_CLDV6211_POE.Models.Event", b =>
                 {
                     b.Navigation("Bookings");
                 });
