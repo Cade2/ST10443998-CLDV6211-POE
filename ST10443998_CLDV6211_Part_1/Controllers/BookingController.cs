@@ -25,7 +25,6 @@ namespace ST10443998_CLDV6211_POE.Controllers
             return View(bookings);
         }
 
-
         [HttpGet]
         public IActionResult Customer()
         {
@@ -53,42 +52,47 @@ namespace ST10443998_CLDV6211_POE.Controllers
         [HttpPost]
         public IActionResult Event(Event ev, int customerId)
         {
+            _db.Events.Add(ev);
+            _db.SaveChanges();
+
+            return RedirectToAction("Payment", new { customerId = customerId, eventId = ev.EventId });
+        }
+
+        [HttpGet]
+        public IActionResult Payment(int customerId, int eventId)
+        {
+            ViewBag.CustomerId = customerId;
+            ViewBag.EventId = eventId;
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Payment(Payment payment, int customerId, int eventId)
+        {
+            // Retrieve the Event
+            var ev = _db.Events.FirstOrDefault(e => e.EventId == eventId);
+            if (ev == null) return NotFound();
+
+            // Create and save the Booking
             var booking = new Booking
             {
-                CustomerId = customerId,
                 BookingDate = DateTime.Now,
+                CustomerId = customerId,
                 Event = ev
             };
 
             _db.Bookings.Add(booking);
             _db.SaveChanges();
 
-            // Pass bookingId to Payment view
-            return RedirectToAction("Payment", new { bookingId = booking.BookingId });
-        }
-
-
-        [HttpGet]
-        public IActionResult Payment(int bookingId)
-        {
-            ViewBag.BookingId = bookingId;
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult Payment(Payment payment, int bookingId)
-        {
-            Console.WriteLine("✅ POST Payment reached");
-
-            var booking = _db.Bookings.FirstOrDefault(b => b.BookingId == bookingId);
-            if (booking == null) return NotFound();
-
-            booking.Payment = payment;
+            // Link and save Payment
+            payment.BookingId = booking.BookingId;
             _db.Payments.Add(payment);
             _db.SaveChanges();
 
-            return RedirectToAction("Confirmation");
+            // ✅ Redirect to Booking Home Page
+            return RedirectToAction("Index", "Booking");
         }
+
 
 
         [HttpGet]
@@ -111,7 +115,10 @@ namespace ST10443998_CLDV6211_POE.Controllers
         public IActionResult Edit(int id)
         {
             var booking = _db.Bookings
+                .Include(b => b.Customer)
                 .Include(b => b.Event)
+                    .ThenInclude(e => e.Venue)
+                .Include(b => b.Event.EventType)
                 .Include(b => b.Payment)
                 .FirstOrDefault(b => b.BookingId == id);
 
@@ -129,6 +136,7 @@ namespace ST10443998_CLDV6211_POE.Controllers
         public IActionResult Edit(Booking booking)
         {
             var existingBooking = _db.Bookings
+                .Include(b => b.Customer)
                 .Include(b => b.Event)
                 .Include(b => b.Payment)
                 .FirstOrDefault(b => b.BookingId == booking.BookingId);
@@ -136,17 +144,22 @@ namespace ST10443998_CLDV6211_POE.Controllers
             if (existingBooking == null)
                 return NotFound();
 
-            // Update Booking date
+            // Update Booking
             existingBooking.BookingDate = booking.BookingDate;
 
-            // Update Event details
+            // Update Customer
+            existingBooking.Customer.FullName = Request.Form["Customer.FullName"];
+            existingBooking.Customer.Email = Request.Form["Customer.Email"];
+            existingBooking.Customer.PhoneNumber = Request.Form["Customer.PhoneNumber"];
+
+            // Update Event
             existingBooking.Event.EventName = Request.Form["Event.EventName"];
-            existingBooking.Event.EventDate = DateTime.Parse(Request.Form["Event.EventDate"]);
             existingBooking.Event.Description = Request.Form["Event.Description"];
+            existingBooking.Event.EventDate = DateTime.Parse(Request.Form["Event.EventDate"]);
             existingBooking.Event.EventTypeId = int.Parse(Request.Form["Event.EventTypeId"]);
             existingBooking.Event.VenueId = int.Parse(Request.Form["Event.VenueId"]);
 
-            // Update Payment details
+            // Update Payment
             existingBooking.Payment.Amount = decimal.Parse(Request.Form["Payment.Amount"]);
             existingBooking.Payment.PaymentDate = DateTime.Parse(Request.Form["Payment.PaymentDate"]);
 

@@ -279,10 +279,10 @@ C:\Users\cadeb\source\repos\ST10443998_CLDV6211_Part_1\obj\Debug\net8.0\staticwe
 C:\Users\cadeb\source\repos\ST10443998_CLDV6211_Part_1\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ST10443998_CLDV6211_POE.props
 C:\Users\cadeb\source\repos\ST10443998_CLDV6211_Part_1\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ST10443998_CLDV6211_POE.props
 C:\Users\cadeb\source\repos\ST10443998_CLDV6211_Part_1\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\cadeb\source\repos\ST10443998_CLDV6211_Part_1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\cadeb\source\repos\ST10443998_CLDV6211_Part_1\obj\Debug\net8.0\ST104439.BDCB10CE.Up2Date
 C:\Users\cadeb\source\repos\ST10443998_CLDV6211_Part_1\obj\Debug\net8.0\ST10443998_CLDV6211_POE.dll
 C:\Users\cadeb\source\repos\ST10443998_CLDV6211_Part_1\obj\Debug\net8.0\refint\ST10443998_CLDV6211_POE.dll
 C:\Users\cadeb\source\repos\ST10443998_CLDV6211_Part_1\obj\Debug\net8.0\ST10443998_CLDV6211_POE.pdb
 C:\Users\cadeb\source\repos\ST10443998_CLDV6211_Part_1\obj\Debug\net8.0\ST10443998_CLDV6211_POE.genruntimeconfig.cache
 C:\Users\cadeb\source\repos\ST10443998_CLDV6211_Part_1\obj\Debug\net8.0\ref\ST10443998_CLDV6211_POE.dll
-C:\Users\cadeb\source\repos\ST10443998_CLDV6211_Part_1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

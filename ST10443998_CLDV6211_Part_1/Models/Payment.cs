@@ -12,5 +12,12 @@
 
         [Display(Name = "Payment Date")]
         public DateTime PaymentDate { get; set; }
+
+        // ✅ THIS IS IMPORTANT
+        public int BookingId { get; set; }
+
+        [ForeignKey("BookingId")]
+        public Booking? Booking { get; set; }
     }
+
 }

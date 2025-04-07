@@ -58,26 +58,22 @@ namespace ST10443998_CLDV6211_POE.Controllers
         [HttpGet]
         public IActionResult Delete(int id)
         {
-            if (id == 0)
-            {
-                return NotFound();
-            }
+            var venue = _db.Venues.FirstOrDefault(v => v.VenueId == id);
+            if (venue == null) return NotFound();
 
-            var venue = _db.Venues.Find(id);
             return View(venue);
         }
 
+        // POST: /Venue/Delete/5
         [HttpPost, ActionName("Delete")]
-        public IActionResult DeletePOST(int id)
+        public IActionResult DeleteConfirmed(int id)
         {
-            var venue = _db.Venues.Find(id);
-            if (venue == null)
-            {
-                return NotFound();
-            }
+            var venue = _db.Venues.FirstOrDefault(v => v.VenueId == id);
+            if (venue == null) return NotFound();
 
             _db.Venues.Remove(venue);
             _db.SaveChanges();
+
             return RedirectToAction("Index");
         }
 
@@ -91,5 +87,6 @@ namespace ST10443998_CLDV6211_POE.Controllers
 
             return View(venue);
         }
+
     }
 }

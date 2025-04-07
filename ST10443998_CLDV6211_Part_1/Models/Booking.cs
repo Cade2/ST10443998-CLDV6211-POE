@@ -16,11 +16,12 @@ namespace ST10443998_CLDV6211_POE.Models
         public int CustomerId { get; set; }
 
         [Display(Name = "Customer")]
-        public Customer Customer { get; set; }
+        public Customer? Customer { get; set; }
 
         // Owned/linked entities
-        public Event Event { get; set; }
-        public Payment Payment { get; set; }
+        public Event? Event { get; set; }
+        public int PaymentId { get; set; }  // ❌ <- This is likely the problem
+        public Payment? Payment { get; set; }
     }
 
 }

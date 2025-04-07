@@ -12,15 +12,15 @@
     <h4>🧍 Customer Details</h4>
     <div class="form-group">
         <label>Full Name</label>
-        <input name="Customer.FullName" value="@Model.Customer?.FullName" class="form-control" />
+        <input class="form-control" name="Customer.FullName" value="@Model.Customer?.FullName" />
     </div>
     <div class="form-group">
         <label>Email</label>
-        <input name="Customer.Email" value="@Model.Customer?.Email" class="form-control" />
+        <input class="form-control" name="Customer.Email" value="@Model.Customer?.Email" />
     </div>
     <div class="form-group">
         <label>Phone Number</label>
-        <input name="Customer.PhoneNumber" value="@Model.Customer?.PhoneNumber" class="form-control" />
+        <input class="form-control" name="Customer.PhoneNumber" value="@Model.Customer?.PhoneNumber" />
     </div>
 
     <h4>📅 Event Details</h4>
@@ -47,7 +47,7 @@
 
     <div class="form-group">
         <label>Venue</label>
-        <select name="VenueId" class="form-control"
+        <select name="Event.VenueId" class="form-control"
                 asp-items="@(new SelectList(ViewBag.Venues, "VenueId", "VenueName", @Model.Event?.VenueId))">
             <option value="">-- Select Venue --</option>
         </select>

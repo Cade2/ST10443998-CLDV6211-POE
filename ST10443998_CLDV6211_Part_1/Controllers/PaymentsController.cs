@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ST10443998_CLDV6211_POE.Data;
+using ST10443998_CLDV6211_POE.Controllers;
 
 namespace ST10443998_CLDV6211_POE.Controllers
 {
@@ -20,7 +21,7 @@ namespace ST10443998_CLDV6211_POE.Controllers
 
         public IActionResult Create()
         {
-            return RedirectToAction("Create", "Booking");
+            return RedirectToAction("Customer", "Booking");
         }
 
         public IActionResult Edit(int id)

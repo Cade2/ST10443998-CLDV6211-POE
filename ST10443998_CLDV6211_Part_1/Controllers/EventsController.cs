@@ -2,6 +2,7 @@
 using ST10443998_CLDV6211_POE.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ST10443998_CLDV6211_POE.Controllers;
 
 namespace EventEaseBookingSystem.Controllers
 {
@@ -24,7 +25,7 @@ namespace EventEaseBookingSystem.Controllers
 
         public IActionResult Create()
         {
-            return RedirectToAction("Create", "Booking");
+            return RedirectToAction("Customer", "Booking");
         }
 
         public IActionResult Edit(int id)
